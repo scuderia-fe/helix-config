@@ -8,6 +8,8 @@ There are the required LSP to make this config work, you'll need to install them
 - [@tailwindcss/language-server](https://www.npmjs.com/package/@tailwindcss/language-server) - for tailwind
 - [vscode-langserver-extracted](https://www.npmjs.com/package/vscode-langservers-extracted) - for emmet, css, html and eslint
 
+In order to check if the language servers are being picked up by helix you can run `hx --health` or more the specific `hx --health <language>` _(e.g: `hx --health typescript`)_.
+
 You may also need some other packages installed globally, these are not mandatory but if they're not present in your project's `package.json`, things won't work. I prefer to have them installed globally so I don't end up typing `:format` and wait for nothing to happen.
 - [typescript](https://www.npmjs.com/package/typescript)
 - [prettier](https://www.npmjs.com/package/prettier)
