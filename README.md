@@ -22,5 +22,8 @@ So in `.ts`, `.tsx` and `.jsx` files you get typescript, emmet and tailwind sugg
 
 To keep the code clean and organized we use prettier.
 
+### Astro
+coming soon.
+
 ## Custom keybinding
 coming soon.
