@@ -21,3 +21,6 @@ The configuration for typescript supports the `typescript-language-server` (obvi
 So in `.ts`, `.tsx` and `.jsx` files you get typescript, emmet and tailwind suggestions as well as eslint and typescript errors.
 
 To keep the code clean and organized we use prettier.
+
+## Custom keybinding
+coming soon.
