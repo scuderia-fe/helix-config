@@ -60,13 +60,13 @@ formatter = { command = "prettier", args = ["--parser", "typescript"] }
 [[language]]
 name = "jsx"
 auto-format = true
-language-servers = [ "tailwindcss-ls", "typescript-language-server", "emmet-ls", "eslint-ls"]
+language-servers = [ { name = "tailwindcss-ls", except-features = ["hover"]}, "typescript-language-server", "emmet-ls", "eslint-ls"]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 
 [[language]]
 name = "tsx"
 auto-format = true
-language-servers = [ "tailwindcss-ls", "typescript-language-server" , "emmet-ls", "eslint-ls"]
+language-servers = [ { name = "tailwindcss-ls", except-features = ["hover"]}, "typescript-language-server" , "emmet-ls", "eslint-ls"]
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
 
 [[language]]
