@@ -52,31 +52,49 @@ auto-format = true
 formatter = { command = "prettier", args = ["--parser", "astro"] }
 
 [[language]]
+name = "svelte"
+auto-format = true
+language-servers = [{ name = "tailwindcss-ls", except-features = ["hover"] }, "svelteserver", "eslint-ls"]
+formatter = { command = "prettier" }
+
+[[language]]
 name = "typescript"
 auto-format = true
 language-servers = [{ name = "tailwindcss-ls", except-features = ["hover"] }, "typescript-language-server", "emmet-ls", "eslint-ls"]
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = "prettier" }
+
+[[language]]
+name = "javascript"
+auto-format = true
+language-servers = [{ name = "tailwindcss-ls", except-features = ["hover"] }, "typescript-language-server", "emmet-ls", "eslint-ls"]
+formatter = { command = "prettier" }
 
 [[language]]
 name = "jsx"
 auto-format = true
 language-servers = [ { name = "tailwindcss-ls", except-features = ["hover"]}, "typescript-language-server", "emmet-ls", "eslint-ls"]
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = "prettier" }
 
 [[language]]
 name = "tsx"
 auto-format = true
 language-servers = [ { name = "tailwindcss-ls", except-features = ["hover"]}, "typescript-language-server" , "emmet-ls", "eslint-ls"]
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = "prettier" }
 
 [[language]]
 name = "html"
 auto-format = true
 language-servers = [ "tailwindcss-ls", "vscode-html-language-server" , "emmet-ls", "eslint-ls"]
-formatter = { command = "prettier", args = ["--parser", "html"] }
+formatter = { command = "prettier" }
 
 [[language]]
 name = "css"
-language-servers = [ "tailwindcss-ls", "vscode-css-language-server" , "emmet-ls", "eslint-ls"]
-formatter = { command = "prettier", args = ["--parser", "css"] }
+auto-format = true
+language-servers = [ { name="tailwindcss-ls", except-features = ["hover"] }, "vscode-css-language-server" , "emmet-ls" , "eslint-ls"]
+formatter = { command = "prettier" }
 
+[[language]]
+name = "scss"
+auto-format= true
+language-servers = [ { name="tailwindcss-ls", except-features = ["hover"] }, "vscode-css-language-server" , "emmet-ls" , "eslint-ls"]
+formatter = { command = "prettier" }
