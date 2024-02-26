@@ -49,7 +49,7 @@ file-types = ["astro"]
 roots = ["package.json", "astro.config.mjs"]
 language-servers = [ "astro-ls", "tailwindcss-ls" ]
 auto-format = true
-formatter = { command = "prettier" }
+formatter = { command = "prettier", args = ["--parser", "astro"] }
 
 [[language]]
 name = "svelte"
