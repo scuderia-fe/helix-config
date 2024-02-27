@@ -23,19 +23,18 @@ display-messages = true
 display-inlay-hints = true
 
 [editor.statusline]
-left = ["mode", "spinner", "file-name", "file-type", "total-line-numbers", "file-encoding"]
-center = []
+left = ["mode", "file-type",  "file-encoding" , "version-control"] 
+center = ["spinner","file-name", "file-modification-indicator"]
 right = [
     "selections",
     "primary-selection-length",
     "position",
-    "position-percentage",
+    "total-line-numbers"
     "spacer",
     "diagnostics",
     "workspace-diagnostics",
-    "version-control"
 ]
-separator = "│"
+separator = "|"
 
 [keys.normal.space]
 i = ":toggle lsp.display-inlay-hints"
